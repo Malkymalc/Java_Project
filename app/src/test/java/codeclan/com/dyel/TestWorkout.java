@@ -23,9 +23,9 @@ public class TestWorkout {
     public Lift ssPress = new Lift(press, startingStrength3x5);
     public Lift ssPullup = new Lift(pullup, startingStrength3x5);
     public Lift ssPowerClean = new Lift(powerClean, startingStrength3x5);
-    public Workout ssA = new Workout("Starting Strength A", ssBackSquat, ssBench, ssPowerClean);
+    public Workout ssA = new Workout("Starting Strength A",ssBackSquat, ssBench, ssPowerClean );
     public Workout ssB = new Workout("Starting Strength B", ssBackSquat, ssPress, ssDeadlift);
-    public Programme startingStrength = new Programme ();
+    public Programme startingStrength = new Programme ("Starting Strnegth", ProgrammeLevel.BEGINER, 195.0, 390.0, 2, 2, ssA, ssB);
 
     @Before
     public void before(){

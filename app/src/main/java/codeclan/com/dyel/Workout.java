@@ -2,6 +2,7 @@ package codeclan.com.dyel;
 
 import java.time.LocalDateTime;
 import java.util.ArrayList;
+import java.util.Collections;
 
 /**
  * Created by user on 07/01/2018.
@@ -14,10 +15,11 @@ public class Workout {
     String notes;
     ArrayList<Lift> lifts;
 
-    public Workout(String name) {
+    public Workout(String name, Lift...args) {
         this.name = name;
         this.notes = "";
         this.lifts = new ArrayList<>();
+        Collections.addAll(lifts, args);
     }
 
 

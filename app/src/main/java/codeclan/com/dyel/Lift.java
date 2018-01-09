@@ -9,6 +9,7 @@ public class Lift {
     private SetRepScheme setRepScheme;
     private Float trainingMax;
 
+
     public Lift(Exercise exercise, SetRepScheme setRepScheme) {
         this.exercise = exercise;
         this.setRepScheme = setRepScheme;
