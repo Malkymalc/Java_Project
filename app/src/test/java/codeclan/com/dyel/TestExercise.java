@@ -10,7 +10,7 @@ import static org.junit.Assert.assertEquals;
  * 1. Set workouts(SS), prepopulated, set meso-cycles like C25K
  * 2. User inputs stats on first load (and can view stats from button on menu thereafter)
  * 3. Taken straight to 1st/next workout on load thereafter
- * 4. User can start, record, and mark workouts as complete
+ * 4. User can start, record(mark lifts as complete), and mark workouts as complete
  * 5. All completed workouts in programme can be scrolled/viewed
  * 6. Weights for next workout pre-set based on last workout
  * 7. User can see basic numeric stats on lift 1RMs - start, now, difference for each lift

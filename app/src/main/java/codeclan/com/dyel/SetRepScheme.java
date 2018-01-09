@@ -8,7 +8,7 @@ import java.util.Set;
  * Created by user on 09/01/2018.
  */
 
-class SetRepScheme {
+public class SetRepScheme {
     private String name;
     private ArrayList<Set> sets;
 
