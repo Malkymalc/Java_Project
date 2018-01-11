@@ -14,6 +14,7 @@ public class Workout {
     LocalDateTime end;
     String notes;
     ArrayList<Lift> lifts;
+    Integer number;
 
     public Workout(String name, Lift...args) {
         this.name = name;
@@ -30,7 +31,11 @@ public class Workout {
         this.name = name;
     }
 
-//    Time and Date Methods
+    public Integer getNumber() {return number;}
+    public void setNumber(Integer number) {this.number = number;}
+
+
+    //    Time and Date Methods
     public LocalDateTime getStart() {
         return start;
     }
@@ -40,8 +45,10 @@ public class Workout {
     public LocalDateTime getEnd() {
         return end;
     }
+
     public void setEnd() {
         this.end = LocalDateTime.now();
+        //new up new workout based on work done
     }
 
 //    Notes

@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="codeclan.com.dyel.Activities.MainActivity">
+    tools:context="codeclan.com.dyel.Activities.UserDetailsActivity">
 
     <TextView
         android:id="@+id/name"
@@ -37,26 +37,11 @@
         android:id="@+id/dob"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="8dp"
         android:layout_marginStart="56dp"
         android:layout_marginTop="32dp"
-        android:text="D.O.B."
-        app:layout_constraintEnd_toStartOf="@+id/dobInput"
-        app:layout_constraintHorizontal_bias="0.4"
+        android:text="Age"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/name" />
-
-    <DatePicker
-        android:id="@+id/dobInput"
-        android:layout_width="163dp"
-        android:layout_height="50dp"
-        android:layout_marginBottom="8dp"
-        android:layout_marginEnd="44dp"
-        android:layout_marginTop="8dp"
-        app:layout_constraintBottom_toTopOf="@+id/heightInput"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/nameInput"
-        app:layout_constraintVertical_bias="0.0" />
 
 
     <TextView
@@ -172,6 +157,7 @@
         android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
+        android:onClick="@onSubmit"
         android:text="START"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -185,11 +171,9 @@
         android:layout_marginBottom="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
         app:layout_constraintBottom_toTopOf="@+id/heightInput"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/gender"
-        app:layout_constraintTop_toBottomOf="@+id/dobInput">
+        app:layout_constraintStart_toEndOf="@+id/gender">
 
         <RadioButton
             android:id="@+id/female"
@@ -215,6 +199,16 @@
         android:text="Gender"
         app:layout_constraintStart_toStartOf="parent"
         tools:layout_editor_absoluteY="158dp" />
+
+    <EditText
+        android:id="@+id/dobInput"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Age"
+        tools:layout_editor_absoluteX="142dp"
+        tools:layout_editor_absoluteY="76dp" />
 
 
 </android.support.constraint.ConstraintLayout>

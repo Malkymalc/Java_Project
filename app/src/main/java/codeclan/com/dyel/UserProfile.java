@@ -1,5 +1,6 @@
 package codeclan.com.dyel;
 
+import java.io.Serializable;
 import java.util.Calendar;
 import java.util.Collections;
 import java.util.HashMap;
@@ -8,17 +9,17 @@ import java.util.HashMap;
  * Created by user on 07/01/2018.
  */
 
-public class UserProfile {
+public class UserProfile implements Serializable {
     private String name;
-    private int age;
-    private boolean gender;
+    private String age;
+    private String gender;
     private Double height;
     private HashMap<Calendar, Double> weights;
     private HashMap<Exercise, Double> workingMaxes;
-    private boolean weightUnit;
-    private boolean heightUnit;
+    private String weightUnit;
+    private String heightUnit;
 
-    public UserProfile(String name, int age, boolean gender, Double height, Double startingWeight, boolean weightUnit, boolean heightUnit) {
+    public UserProfile(String name, String age, String gender, Double height, Double startingWeight, String weightUnit, String heightUnit) {
         this.name = name;
         this.age = age;
         this.gender = gender;
@@ -37,17 +38,17 @@ public class UserProfile {
         this.name = name;
     }
 
-    public int getAge() {
+    public String getAge() {
         return age;
     }
-    public void setAge(int age) {
+    public void setAge(String age) {
         this.age = age;
     }
 
-    public boolean isGender() {
+    public String isGender() {
         return gender;
     }
-    public void setGender(boolean gender) {
+    public void setGender(String gender) {
         this.gender = gender;
     }
 
@@ -69,17 +70,17 @@ public class UserProfile {
         weights.put(Calendar.getInstance(), weight);
     }
 
-    public boolean isWeightUnit() {
+    public String isWeightUnit() {
         return weightUnit;
     }
-    public void setWeightUnit(boolean weightUnit) {
+    public void setWeightUnit(String weightUnit) {
         this.weightUnit = weightUnit;
     }
 
-    public boolean isHeightUnit() {
+    public String isHeightUnit() {
         return heightUnit;
     }
-    public void setHeightUnit(boolean heightUnit) {
+    public void setHeightUnit(String heightUnit) {
         this.heightUnit = heightUnit;
     }
 
